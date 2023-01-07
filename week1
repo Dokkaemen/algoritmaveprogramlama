@@ -1,0 +1,80 @@
+public class AreaAndVolumeOfTheCircle {
+    public static void main(String[] args) {
+    final double pi=3.14;
+    Scanner input = new Scanner(System.in);
+    double hacim;
+    double alan;
+    int yaricap;
+    System.out.println("Yarıçap Değerini giriniz:");
+    yaricap=input.nextInt();
+    hacim=pi*yaricap*yaricap*yaricap*4/3;
+    alan=4*pi*(yaricap*yaricap);
+    System.out.println("Kürenin Hacmi: "+hacim);
+    System.out.println("Kürenin Alanı: "+alan);     
+    }
+}
+
+public class AreaOfTriangle {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    double yükseklik;
+    double tabanAlani;
+    System.out.println("Üçgenin yüksekliğini giriniz.");
+    yükseklik=input.nextDouble();
+    System.out.println("Üçgenin taban alanını giriniz.");
+    tabanAlani=input.nextDouble();
+    double sonuc=(tabanAlani*yükseklik)/2;
+    System.out.println("Üçgenin Alanı: "+sonuc);
+    }  
+}
+public class PotentialAndKineticEnergyCalculator {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    final int g=10;
+    double kutle;
+    double hiz;
+    double yerdenYukseklik;
+    double potansiyelEnerji;
+    double kinetikEnerji;
+    System.out.println("Kütle giriniz");
+    kutle=input.nextDouble();
+    System.out.println("Hız giriniz");
+    hiz=input.nextDouble();
+    System.out.println("Yerden Yüksekliğini giriniz");
+    yerdenYukseklik=input.nextDouble();
+    potansiyelEnerji=kutle*g*yerdenYukseklik;
+    kinetikEnerji=kutle*(hiz*hiz)*1/2;
+    System.out.println("Sistemin Potansiyel Enerjisi: "+potansiyelEnerji);
+    System.out.println("Sistemin Kinetik Enerjisi: "+kinetikEnerji);    
+    }
+}
+
+public class RadiansCalculator {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    double radyan;
+    double grad;
+    double derece;
+    System.out.println("Derece Giriniz");
+    derece=input.nextDouble();
+    radyan=derece/180;
+    grad=derece*1.11;
+    System.out.println(derece+" Derece "+radyan+"π Radyan Eder");
+    System.out.println(derece+" Derece "+grad+" Grad Eder");
+    }
+}
+
+public class VoltageCalculator {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    double iletkenDirenci;
+    double akim;
+    double gerilim;
+    System.out.println("İletkenin Direncini giriniz");
+    iletkenDirenci=input.nextDouble();
+    System.out.println("Akım giriniz");
+    akim=input.nextDouble();
+    gerilim=akim*iletkenDirenci;
+    System.out.println("Gerilim: "+gerilim);
+    } 
+}
