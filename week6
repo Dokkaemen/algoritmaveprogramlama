@@ -1,0 +1,391 @@
+Scanner input = new Scanner(System.in);
+                   System.out.println("Lutfen bir sayi giriniz");
+                   int sayi = input.nextInt();
+                   
+                    for (int i = 1; i <= sayi-1; i++) {
+                        for (int j =i+1 ; j <= sayi-i; j++) {
+                             int a = sayi-(i+j);
+                             if (Math.pow(i, 2)+Math.pow(j, 2) == Math.pow(a, 2)) {
+                                 System.out.println(i);
+                                 System.out.println(j);
+                                 System.out.println(a);
+                                 System.out.println(i*j*c);
+                             }
+                        }
+                    }
+Scanner input = new Scanner(System.in);
+                     System.out.println("Bir sayi giriniz");
+                     int sayi = input.nextInt();
+                     int a1 = 1;
+                     int a2 = 1;
+                     int a3 = 2;
+                     System.out.println(a1);
+                     System.out.println(a2);
+                     System.out.println(a3);
+                     
+                      for (int i = 1; i <= sayi-3; i++) {
+                          int a4 = a1+a2+a3;
+                          System.out.println(a4);
+                          a1 = a2;
+                          a2 = a3;
+                          a3 = a4;
+                      }
+Scanner input = new Scanner(System.in);
+                    System.out.println("Bir sayi giriniz");
+                    int sayi = input.nextInt();
+                    int a1 = 1;
+                    int a2= -1;
+                    System.out.println(a1);
+                    System.out.println(a2); 
+                     for (int i = 1; i <=sayi-2; i++) {
+                            int a3 = a1-a2;
+                            System.out.println(a3);
+                            a1=a2;
+                            a2=a3;
+                     }
+Scanner input = new Scanner(System.in);
+                      System.out.println("Bir sayi giriniz"); 
+                      int sayi = input.nextInt();
+                      int a1 = 1;
+                      int a2 = 1;
+                      int b2 = 0;
+                      
+                      do { 
+                          int a3 = a1+a2;
+                            a1=a2;
+                            a2=a3;
+                          int b1 =0;
+                          
+                           for (int i = 2; i < a3-1; i++) {
+                               if (a3%i==0) {
+                                   b1++;
+                               }
+                           }
+                             if (b1==0) {
+                                b2++;
+                                 System.out.println("Sayi = "+a3);
+                             }
+                           
+                         } while (b2<sayi);
+                         
+for (int i = 0; i < 9; i++) {
+                          for (int j = 0; j < 9; j++) {
+                            int a = i+j;
+                              if (a==1 || a==2 || a==3 || a==5 || a==8 || a==13 ) {
+                                  System.out.println("Sayi = "+(10*i+j));
+                              }
+                          }
+                    }
+                    
+Scanner input = new Scanner(System.in);
+                  System.out.println("Bir sayi giriniz");  
+                  int sayi = input.nextInt();
+                  int a = 1;
+                  int b = 1;
+                  int c = 0;
+                     for (int i = 0; i <= sayi-1; i++) {
+                         c = b+a;
+                         System.out.println(a);
+                         a=b;
+                         b=c; 
+                     } 
+                     
+Scanner input = new Scanner(System.in);
+                    System.out.println("Bir sayi giriniz");   
+                    int sayi = input.nextInt();
+                    int a0 = 0;
+                    int a1 = 1;
+                     System.out.println(a1); 
+                     
+                      for (int i = 0; i < sayi-1; i++) {
+                          int a2 = 34*a1-a0+2;
+                          System.out.println(a2);
+                          a0=a1;
+                          a1=a2;
+                      }
+                      
+Scanner input = new Scanner(System.in);
+                     System.out.println("Bir sayi giriniz...");
+                     int sayi = input.nextInt();
+                     
+                      for (int i = 1; i <= sayi; i++) {
+                           int a = i*(i+1)/2;
+                           System.out.println("Sayi = "+a);
+                      }
+                      
+Scanner input = new Scanner(System.in);
+                       System.out.println("Basamak degerini giriniz");  
+                       int a = input.nextInt();
+                       double sonuc;
+                       
+                       sonuc = Math.pow(90, ((a-1/2)));
+                         System.out.println("Sonuc = "+sonuc);
+                         
+for (int i= 1; i <= 9;i++ ) {
+                            for (int j = 0; j <= 9;j++ ) {
+                                System.out.println("Sayi = "+(100*i+10*j+i));
+                            }
+                        }
+                        for (int i = 1; i <= 9; i++) {
+                            for (int j = 0; j <= 9; j++) {
+                                System.out.println("Sayi = "+(1000*i+100*j+10*j+i));
+                            }
+                        }
+                        
+Scanner input = new Scanner(System.in);
+                        for (int i = 1; i <= 50; i++) {
+                            for (int j = 1;j <= 50;j++) {
+                                for (int k = 1; k <= 50; k++) {
+                                    if (Math.pow(i, i)+Math.pow(j, j)+Math.pow(k, k) == 3*i*j*k) {
+                                        System.out.println("Sayi = ("+i+", "+j+", "+k+")"); 
+                                    }
+                                }
+                            }
+                        }
+                        
+Scanner input = new Scanner(System.in);
+                     System.out.println("Bir sayi giriniz");
+                     int sayi = input.nextInt();
+                     int sayac = 0;
+                     int toplam = 0;
+              
+                       for (int i = 1; i <= sayi; i++) {
+                          if (sayi%i ==0) {
+                            toplam += 1/i;
+                            sayac++;
+                          }
+                       }
+                          if (sayac%toplam == 0) {
+                              System.out.println("Bu sayi bir Ore Sayisidir);   
+                          }      
+                          else{
+                              System.out.println("Bu sayi bir Ore Sayisi değildir");
+                          }
+                          
+Scanner input = new Scanner(System.in);
+                    System.out.println("Bir sayi giriniz"); 
+                    int sayi = input.nextInt();
+                    
+                    for (int i = 1; i <=sayi; i++) {
+                        if (sayi == i*(i+1)) {
+                            System.out.println("Bu sayi bir Heterometrik Sayidir");
+                        }
+                    }
+                    
+Scanner input = new Scanner(System.in);
+                 System.out.println("Lutfen bir sayi giriniz"); 
+                 int sayi = input.nextInt();
+                 int sayac = 0;
+                 
+                    for (int i = 1; i <= sayi; i++) {
+                        if (sayi%i == 0) {
+                            sayac +=i;
+                        }
+                    }
+                      if (sayac < 2*sayi) {
+                          System.out.println("Bu sayi bir Eksik Sayidir"); 
+                      }
+                      else{
+                          System.out.println("Bu sayi bir Eksik Sayi değildir");
+                      }
+                      
+Scanner input = new Scanner(System.in);
+                 System.out.println("Lutfen iki basamaklı 1. sayiyi giriniz"); 
+                 int sayi1 = input.nextInt();
+                 System.out.println("Lutfen iki basamaklı 2. sayiyi giriniz");
+                 int sayi2 = input.nextInt();
+                 
+                   int sayi1IlkBasamak = sayi1%10;
+                   int sayi1IkinciBasamak = sayi1/10;
+                   int sayi2IlkBasamak = sayi2%10;
+                   int sayi2IkinciBasamak = sayi2/10;
+                   
+                  if ((sayi1IkinciBasamak == sayi2IkinciBasamak) && (sayi1IlkBasamak + sayi2IlkBasamak == 10)) {
+                        System.out.println(sayi1+" ve "+sayi2+" Bir Bagdasik Sayidir");
+                  }
+                  else{
+                      System.out.println(sayi1+" ve "+sayi2+" Bir Bagdasik Sayi değildir");
+                  }
+                  
+Scanner input = new Scanner(System.in);
+                  System.out.println("Lütfen sayıyı giriniz");
+                  int sayi = input.nextInt();
+                  System.out.println("Basamak sayısını giriniz");
+                  int basamakSayisi = input.nextInt();
+                    
+                    int toplam = 0;
+                    int geciciSayi = sayi;
+                    
+                    do { 
+                       int kalan = geciciSayi%10;
+                      toplam += Math.pow(kalan, basamakSayisi);
+                      geciciSayi = geciciSayi/10;
+                    } while (geciciSayi>0);
+                                       
+                    if (sayi == toplam) {
+                        
+                        System.out.println("Bu sayı bir Armstrong sayıdır");
+                
+                     }
+                    else{
+                        System.out.println("Bu sayı Armstrong sayı değildir");
+                    }
+                    
+Scanner input = new Scanner(System.in);
+                   System.out.println("Bir sayi giriniz"); 
+                   int sayi = input.nextInt();
+                     
+                    for (int i = 0; i <=sayi; i++) {
+                          if (sayi == (4*i)+1) {
+                              System.out.println(sayi+" Bir Hilbert Sayisidir"); 
+                              break;
+                          }
+                    }
+Scanner input = new Scanner(System.in);
+                    System.out.println("Birinci sayiyi giriniz"); 
+                    int sayi1 = input.nextInt();
+                    System.out.println("İkinci sayiyi giriniz"); 
+                    int sayi2 = input.nextInt();
+                    double a=0;
+                    
+                    for (int i = 2; i <= sayi1; i++) {
+                        for (int j = 2; j <= sayi2; j++) {
+                           a = Math.pow(j, i)+Math.pow(i, j);
+                            System.out.println("Sayilar = "+a);
+                        }
+                    }
+                    
+Scanner input = new Scanner(System.in);
+                    System.out.println("Bir sayi giriniz"); 
+                    int sayi = input.nextInt();
+                    
+                     for (int i = 0; i <= sayi; i++) {
+                       double a =  Math.pow(2, Math.pow(2, i))+1;
+                               System.out.println("Sayi = "+a);
+                     }
+                     
+Scanner input = new Scanner(System.in);
+                      System.out.println("Bir sayi giriniz"); 
+                      int sayi = input.nextInt();
+                      
+                       for (double i = 1; i <= sayi; i++) {
+                            i = (i*Math.pow(2, i))+1;
+                            System.out.println("Sayi = "+i);
+                       }
+                       
+Scanner input = new Scanner(System.in);
+                    System.out.println("Bir sayi giriniz");
+                    int sayi = input.nextInt();
+                    int sayac = 0;
+                    
+                     for (int i = 1; i < sayi; i++) {
+                         if (sayi%i == 0) {
+                             sayac+=i;
+                         }
+                     }
+                      if (sayac == sayi) {
+                          System.out.println("Bu sayi bir mukemmel sayidir");
+                      }
+                      else{
+                          System.out.println("Bu sayi bir mukemmel sayi değildir");
+                      }    
+                      
+Scanner input = new Scanner(System.in);
+                        System.out.println("Bir sayi giriniz");
+                        int sayi = input.nextInt();
+                        
+                        
+                        for (int i = 2; i <=sayi; i++) {
+                            if (sayi%i == 0) {
+                                System.out.println("Asal sayi = "+i);
+                               sayi /= i;
+                            }
+                        }
+                        
+for (int i = 2; i <= 7; i++) {
+                        for (int j = 2; j <= 7; j++) {
+                            if ( (i == 2 || i == 3 || i == 5 || i == 7) && 
+                                 (j == 2 || j == 3 || j == 5 || j == 7)) {
+                                System.out.println("Sayı = "+(10*i+j));  
+                            }
+                        }
+                    }
+                    
+Scanner input = new Scanner (System.in);
+                  System.out.println("Bir sayi giriniz...");  
+                  int sayi = input.nextInt();
+                  
+                     for (int i = 2; i<= sayi; i++) {
+                        int sayac  = 0;
+                         for (int j = 1; j <=i ; j++) {
+                            if ( i % j == 0) {
+                                 sayac++;
+                             }
+                             if (sayac == 2) {
+                                 System.out.println("Sayilar = "+i);
+                             }   
+                         }       
+                     }
+                     
+                     Scanner input = new Scanner(System.in);
+                 System.out.println("Kisa kenari girinizi...");
+                 int kisa = input.nextInt();
+                 int s;
+                 
+                 s= kisa*(1+5^(1/2)/2);
+                  
+                  System.out.println(kisa+"\n"+s+"\n"+s);
+                  
+Scanner input = new Scanner(System.in);
+                  System.out.println("Bir uzunluk giriniz");  
+                  double a = input.nextInt();
+                  double b;
+                  double c;
+                  
+                  c = 2*a/(1+Math.sqrt(5));
+                  b = a-c;
+                  
+                  System.out.println(c+" "+b);
+                  
+Scanner input = new Scanner(System.in);
+              Random rastgele = new Random();
+            System.out.println("Tahmin ettiginiz sayiyi giriniz");
+            int rastgele = rastgele.nextInt(100)+1;
+            int sayac = 0;
+            int tahmin;
+            do{
+                sayac++;
+                 tahmin = input.nextInt();
+                if (tahmin < rastgele) {
+                    System.out.println("Daha buyuk bir sayi giriniz");
+                }
+                else if (tahmin > rastgele) {
+                    System.out.println("Daha kucuk bir sayi giriniz");
+                }
+                else {
+                    System.out.println(sayac+" denemede "+tahmin+" sayısını doğru tahmin ettiniz");
+                 break;
+                }
+                
+            }while (tahmin>0 && tahmin<100);
+            
+            
+ Scanner input = new Scanner(System.in);
+        System.out.println("Lutfen aci degerini giriniz");
+        double aci = input.nextInt();
+        System.out.println("Lutfen bir terim sayisi giriniz");
+        int terimSayisi = input.nextInt();
+        
+        double a =1;
+        int is = 1;
+        double s = Math.toRadians(aci);
+          for (int i = 0; i < terimSayisi-1; i++) {
+            double f =1;
+              for (int j = 0; j < 2*i; j++) {
+                  f*=j;
+                  is*=-1;
+                  a =a +is*Math.pow(s,2*i);     
+              }        
+          }
+             System.out.println("Seri acilimi ile hazırlanan deger "+a);
+             System.out.println("Komutla hazırlanan deger "+Math.cos(s));
