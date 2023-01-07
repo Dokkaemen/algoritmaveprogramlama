@@ -1,0 +1,125 @@
+public class HaftaGünleri {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+        System.out.println("1-7 Arası sayı giriniz");
+        int sayi=input.nextInt();
+        if (sayi==1) {
+            System.out.println("Pazartesi");
+        }
+        if (sayi==2) {
+            System.out.println("Salı");
+        }
+        if (sayi==3) {
+            System.out.println("Çarşamba");
+        }
+        if (sayi==4) {
+            System.out.println("Perşembe");
+        }
+        if (sayi==5) {
+            System.out.println("Cuma");
+        }
+        if (sayi==6) {
+            System.out.println("Cumartesi");
+        }
+        if (sayi==7) {
+            System.out.println("Pazar");
+        }
+    }
+}
+
+public class PozitifNegatifVeSıfır {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+        System.out.println("Sayı Giriniz");
+    int sayi =input.nextInt();
+    if(sayi>0){
+        System.out.println("Sayı Pozitiftir");
+    }
+    if(sayi<0){
+        System.out.println("sayı negatiftir");
+    }
+    if(sayi==0){
+        System.out.println("Sayı sıfırdır");
+    }
+    }
+}
+
+public class SayılarınKaresi {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+        System.out.println("Sayıyı giriniz");
+        int sayi=input.nextInt();
+        int toplam=0;
+        int a=1;
+        while (a<=sayi) {
+            toplam=toplam+(a*a);
+            a++;
+        }
+        System.out.println("Toplam "+toplam);
+        
+    }
+}
+
+public class TekSayilarinToplami {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int a=1;
+    int toplam=0;
+        System.out.println("Sayı giriniz");
+        int sayi=input.nextInt();
+        while (a<=sayi) {
+            if (a%2==1) {
+                toplam=toplam+a;
+            }
+            a++;
+        }
+        System.out.println("Toplam "+toplam);
+    }
+}
+
+public class Çarpma {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int a=1;
+        System.out.println("1. Sayıyı giriniz");
+        int sayi1=input.nextInt();
+        System.out.println("2. Sayıyı giriniz");
+        int sayi2=input.nextInt();
+        int toplam=0;
+        while (a<=sayi2) {
+            toplam=toplam+sayi1;
+            a++;
+        }
+        System.out.println("Çarpım sonucu "+toplam);
+    }
+}
+
+public class Üçgen {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.println("1. kenar uzunluğunu girin");
+    int kenar1=input.nextInt();
+    System.out.println("2. kenar uzunluğunu girin");
+    int kenar2=input.nextInt();
+    System.out.println("3. kenar uzunluğunu girin");
+    int kenar3=input.nextInt();
+    
+        if (kenar1==kenar2 && kenar1!=kenar3 && kenar2!=kenar3 ) {
+            System.out.println("İkizkenar üçgendir");
+        }
+        if (kenar2==kenar3 && kenar1!=kenar3 && kenar2!=kenar1 ) {
+            System.out.println("İkizkenar üçgendir");
+        }
+        if (kenar1==kenar3 && kenar1!=kenar2 && kenar2!=kenar3 ) {
+            System.out.println("İkizkenar üçgendir");
+        }
+        
+        if (kenar1==kenar2 && kenar1==kenar3 && kenar2==kenar3 ) {
+            System.out.println("Eşkenar üçgendir");
+        }
+        
+        if (kenar1!=kenar2 && kenar1!=kenar3 && kenar2!=kenar3 ) {
+            System.out.println("Çeşitkenar Üçgendir");
+        }
+    }
+}
