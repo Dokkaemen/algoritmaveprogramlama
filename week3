@@ -1,0 +1,103 @@
+public class Example22 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Sayı giriniz: ");
+        int tekToplam=0,ciftToplam=0,toplam=0;
+        int sayi=input.nextInt();
+        for (int i = 1; i <= sayi; i++) {
+            if (i%2==1) {
+                tekToplam+=i;
+            }
+            if (i%2==0) {
+                ciftToplam +=i;
+            }
+            toplam+=i;
+        }
+        System.out.println("Çift sayıların toplamı: "+ciftToplam);
+        System.out.println("Tek sayıların toplamı: "+tekToplam);
+        System.out.println("Tam sayıların toplamı: "+toplam);
+    }
+}
+
+public class Example23 {
+    public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+System.out.print("Sayı giriniz: ");
+int sayi=input.nextInt();
+        for (int i = 1; i < sayi; i++) {
+            if (sayi%i==0) {
+                System.out.println(i+" Sayısı "+sayi+" Sayısını tam böler");
+            }
+        }
+    }
+    
+}
+public class Example30 {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Değer giriniz: ");
+    int sayi = input.nextInt();
+    int sonuc= (sayi*sayi)+(-5*sayi)+3;
+        if (sonuc<1) {
+            System.out.println("-1");
+        }
+        if (sonuc>1) {
+            System.out.println("1");
+        }
+        if (sonuc==0) {
+            System.out.println("");
+        }
+    }  
+}
+
+public class Example33 {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Metre değeri giriniz: ");
+    int metre = input.nextInt();
+    System.out.println("Dönüşmesini istediğiniz değeri seçiniz \n 1-mm \n 2-cm \n 3-dm \n 4-km");
+    System.out.print("Seçim: ");
+    int deger=input.nextInt();
+        if (deger==1) {
+            System.out.println(metre+" Metre "+(metre*1000)+" MM dir");
+        }
+        if (deger==2) {
+            System.out.println(metre+" Metre "+(metre*100)+" CM dir");
+        }
+        if (deger==3) {
+            System.out.println(metre+" Metre "+(metre*10)+" DM dir");
+        }
+        if (deger==4) {
+            System.out.println(metre+" Metre "+(metre/1000)+" KM dir");
+        }
+        else
+            System.out.println("1-4 Arasında değer seçiniz");
+    }
+}
+public class Example45 {
+    public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+        String tersSayi="";
+        System.out.print("Sayı giriniz: ");
+        int sayi=input.nextInt();
+        for (int i = sayi; i >0;) {
+            tersSayi=tersSayi+(i%10);
+            i=i/10;
+        }
+        System.out.println("Sayının tersten yazılmış hali: "+tersSayi);
+    }
+}
+
+public class Example46 {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+        String tersSayi="";
+        System.out.print("Sayı giriniz: ");
+        int sayi=input.nextInt();
+        for (int i = sayi; i >0;) {
+            tersSayi=tersSayi+(i%10);
+            i=i/10;
+        }
+        System.out.println("Sayının tersten yazılmış hali: "+tersSayi);
+    }
+}
