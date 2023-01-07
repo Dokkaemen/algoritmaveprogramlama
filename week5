@@ -1,0 +1,76 @@
+Scanner input = new Scanner(System.in);
+                System.out.println("Bir sayi giriniz");
+                int sayi = input.nextInt();
+                int sayac = 0;
+                int toplam = 0;
+                
+                for (int i = 1; i <= sayi; i++) {
+                    if (sayi%i ==0) {
+                      toplam += i;
+                      sayac++;
+                    }
+                }
+                  if (toplam%sayac == 0) {
+                      System.out.println("Bu sayi bir Arifmetik Sayidir");
+                  }
+                  else{
+                      System.out.println("Bu sayi Arifmetik Sayi değildir");
+                  }
+                  
+Scanner input = new Scanner(System.in);
+           System.err.println("Birinci sayiyi giriniz"); 
+           int sayi1 = input.nextInt();
+           System.out.println("İkinci sayiyi giriniz");
+           int sayi2 = input.nextInt();
+           
+           int sayi1a = 0;
+           int sayi2a = 0;
+           
+              for (int i = 1; i < sayi1-1; i++) {
+                  if (sayi1%i == 0 ) {  
+                       sayi1a =  sayi1a+i;
+                  }
+              }
+               for (int j = 1; j < sayi2-1; j++) {
+                     if (sayi2%j == 0) {
+                         sayi2a = sayi2a+j;
+                     }
+               }
+                if (tsayi1 == sayi2 && tsayi2 == sayi1) {  
+                    System.out.println("Sayilar bir dost sayidir");
+                } 
+                else {
+                    System.out.println("Sayilar bir dost sayisi değildir");
+                }
+                
+Scanner input = new Scanner(System.in);
+               System.out.println("Bir sayi giriniz");
+               int sayi = input.nextInt();
+               int sayac = 0;
+               
+               for (int i = 2; i < sayi; i++) {
+                   if (sayi%i == 0) { 
+                       sayac++;
+                   }
+               }
+               for (int i = 2; i < sayi; i++) {
+                   if ((sayi+2)%i== 0) { 
+                     sayac++;
+                   }
+               }
+                 if (sayac == 0) {
+                   System.out.println("Bu sayi bir Chen Asalıdır");
+                 }
+                 
+Scanner input = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz"); 
+        int sayi = input.nextInt();
+        int s = 2;
+        
+        while (sayi>1) {            
+            if (sayi%s ==0) {
+                System.out.println("sayi = "+s);
+                sayi /= s; 
+            }
+             s++;
+        }
